@@ -56,10 +56,11 @@ const preguntes = [
   }
 ];
 
-const preguntaActual = preguntes[0];
+let preguntaActual = preguntes[0];
 const test = document.querySelector('#test');
 const contenidorPregunta = document.querySelector('#contenidor-pregunta');
 const missatge = document.querySelector('#missatge');
+const pestanyes = document.querySelectorAll('.pestanya');
 
 function mostrarPregunta(pregunta) {
   const opcionsHTML = pregunta.opcions.map((opcio) => `
@@ -78,7 +79,28 @@ function mostrarPregunta(pregunta) {
   `;
 }
 
-mostrarPregunta(preguntaActual);
+function seleccionarCategoria(categoria) {
+  const preguntesFiltrades = preguntes.filter((pregunta) => pregunta.categoria === categoria);
+
+  preguntaActual = preguntesFiltrades[0];
+  mostrarPregunta(preguntaActual);
+  missatge.textContent = '';
+  missatge.className = '';
+
+  pestanyes.forEach((pestanya) => {
+    const esActiva = pestanya.dataset.categoria === categoria;
+    pestanya.classList.toggle('activa', esActiva);
+    pestanya.setAttribute('aria-selected', esActiva);
+  });
+}
+
+pestanyes.forEach((pestanya) => {
+  pestanya.addEventListener('click', () => {
+    seleccionarCategoria(pestanya.dataset.categoria);
+  });
+});
+
+seleccionarCategoria('Vocals');
 
 test.addEventListener('submit', (event) => {
   event.preventDefault();
