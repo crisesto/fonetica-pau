@@ -58,121 +58,141 @@ const preguntes = [
     pregunta: 'La vocal tònica de la paraula «hivern» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va seguida de r + consonant (hivern), context que obri la e segons les regles de la fonètica valenciana.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «verd» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va seguida de r + consonant (verd), context que obri la e segons les regles de la fonètica valenciana.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «gerro» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va davant de rr (gerro), tal com indica la regla de e oberta davant de rr.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «escola» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és oberta perquè la paraula acaba en -ola (escola), tal com indica la regla de o oberta en mots acabats en -ol/-ola.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «porta» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és oberta perquè la paraula acaba en -orta (porta), tal com indica la regla de o oberta en mots acabats en -ort/-orta.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «carxofa» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és oberta perquè la paraula acaba en -ofa (carxofa), tal com indica la regla de o oberta en mots acabats en -ofa.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «herba» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és tancada perquè va seguida de r + consonant labial (-rb-), i davant de consonant labial la e sol ser tancada.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «cercle» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és tancada perquè va seguida de r + consonant velar (-rc-), i davant de consonant velar la e sol ser tancada.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «boca» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és tancada perquè boca és una excepció a la regla general de o oberta en mots acabats en -oca.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «bossa» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és tancada perquè bossa és una excepció a la regla general de o oberta en mots acabats en -ossa.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «perla» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va seguida de r + consonant (-rl-), context que obri la e segons les regles de la fonètica valenciana.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «ferro» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va davant de rr (ferro), tal com indica la regla de e oberta davant de rr.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «terra» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és oberta perquè va davant de rr (terra), tal com indica la regla de e oberta davant de rr.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «selva» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és tancada perquè selva és una excepció: davant de l, mots com selva o belga presenten e tancada.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «dent» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és tancada perquè va seguida de nasal + consonant (-nt-), context on la e sol ser tancada en valencià.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «vent» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La e és tancada perquè va seguida de nasal + consonant (-nt-), context on la e sol ser tancada en valencià.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «gos» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és tancada perquè no es troba en cap dels contexts d\'obertura (terminacions -oc, -ol, -ort, -ost, -ot, etc.).'
   },
   {
     pregunta: 'La vocal tònica de la paraula «mossa» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'tancada',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és tancada perquè mossa és una excepció: mots com bossa o mossa presenten o tancada, a diferència d\'altres acabats en -ossa.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «hora» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és oberta perquè prové d\'una ō llarga llatina (HŌRA) i no es troba en cap context de tancament.'
   },
   {
     pregunta: 'La vocal tònica de la paraula «grossa» és:',
     opcions: ['oberta', 'tancada'],
     resposta_correcta: 'oberta',
-    categoria: 'Vocals'
+    categoria: 'Vocals',
+    explicacio: 'La o és oberta perquè la paraula acaba en -ossa (grossa), tal com indica la regla general de o oberta en mots acabats en -ossa.'
   }
 ];
 
