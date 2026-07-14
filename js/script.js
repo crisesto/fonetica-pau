@@ -24,13 +24,13 @@ const preguntes = [
   {
     id: 3,
     categoria: 'Elisions',
-    enunciat: 'Quin fenomen es produeix en «mitj<span style="color:red;font-weight:bold">a</span> hora»?',
+    enunciat: 'Quin fenomen es produeix en «espess<span style="color:red;font-weight:bold">a</span> ombra»?',
     opcions: [
       { text: 'Elisió', valor: 'elisio' },
       { text: 'No elisió', valor: 'no-elisio' }
     ],
     correcta: 'elisio',
-    explicacio: 'Quan una vocal és tònica i l\'altra és àtona, s\'elimina la vocal àtona: «mitja hora» es pronuncia «mitj·ora».'
+    explicacio: 'Quan una vocal és tònica i l\'altra és àtona, s\'elimina la vocal àtona: «espessa ombra» es pronuncia «mitj·ora».'
   },
   {
     id: 4,
@@ -263,7 +263,79 @@ const preguntes = [
     resposta_correcta: 'sonora',
     categoria: 'Consonants',
     explicacio: 'La consonant oclusiva dental sorda [t] (set) es sonoritza [d] quan va seguida d\'una consonant sonora (m), segons la regla de sonorització de les oclusives en contacte amb consonant sonora.'
+  },
+  // === INICI: 10 preguntes noves sobre Elisions (fonètica sintàctica i contacte vocàlic) ===
+  {
+    pregunta: 'En l\'expressió «mitj<span style="color: red; font-weight: bold;">a</span> hora», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la \'a\' de «mitja» perquè, en contacte de vocals on una és tònica (la \'o\' de «hora») i l\'altra és àtona (la \'a\' de «mitja»), s\'elimina la vocal àtona (regla: «Quan una és tònica i l\'altra àtona, s\'elimina l\'àtona»).'
+  },
+  {
+    pregunta: 'En l\'expressió «diu qu<span style="color: red; font-weight: bold;">e</span> aniran», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la \'e\' de «que» perquè, en contacte de dues vocals àtones on hi ha una \'e\', s\'elideix sempre la \'e\' (regla: «Si les dues són àtones i hi ha una e, s\'elideix la e»). Exemple del dossier: «Diu que aniran (diu q·aniran)».'
+  },
+  {
+    pregunta: 'En l\'expressió «carro <span style="color: red; font-weight: bold;">a</span>ntic», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la \'a\' de «antic» perquè, en contacte de dues vocals àtones on no hi ha cap \'e\', s\'elideix la \'a\' (regla: «Si les dues són àtones i no hi ha e, s\'elideix la a»). Exemple del dossier: «carro antic (carro·ntic)».'
+  },
+  {
+    pregunta: 'En l\'expressió «Entr<span style="color: red; font-weight: bold;">a</span> ací», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la primera \'a\' de «Entra» perquè, en contacte de dues vocals iguals (a + a), s\'elideix la primera vocal (regla: «Si són les mateixes, s\'elideix la primera vocal»). Exemple del dossier: «Entra ací (Entr·ací)».'
+  },
+  {
+    pregunta: 'En l\'expressió «si <span style="color: red; font-weight: bold;">e</span>l compres», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la \'e\' de «el» perquè, en contacte de \'i\' + \'e\' que no formen diftong, s\'elideix la \'e\' (regla: «Si la primera és i i la 2a és e, i no formen diftong, s\'elideix la e»). Exemple del dossier: «si el compres, te\'n penediràs (si·l compres)».'
+  },
+  {
+    pregunta: 'En l\'expressió «arribà <span style="color: red; font-weight: bold;">À</span>ngel», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "no s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'No s\'elideix la \'À\' d\'«Àngel» perquè tant la \'à\' d\'«arribà» com la \'À\' d\'«Àngel» són tòniques. Quan les dues vocals són tòniques, no s\'elideixen (regla: «Si les dues són tòniques no s\'elideixen»). Exemple del dossier: «Arribà Àngel (arribà Àngel)».'
+  },
+  {
+    pregunta: 'En l\'expressió «hi h<span style="color: red; font-weight: bold;">a</span> gent», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "no s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'No s\'elideix la \'a\' de «ha» perquè la \'i\' de «hi» forma diftong amb la \'a\' següent. Quan una de les vocals és \'i\' o \'u\' i formen diftong, no s\'elideixen (regla: «Si una de les vocals és i o u, i formen diftong, no s\'elideixen»). Exemple del dossier: «Hi ha gent (iagent)».'
+  },
+  {
+    pregunta: 'En l\'expressió «l<span style="color: red; font-weight: bold;">a</span> universitat», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "no s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'No s\'elideix la \'a\' de l\'article «la» perquè davant de \'i\' o \'u\' àtones, l\'article o pronom «la» no s\'elideix mai (regla: «L\'article o el pronom la no s\'elideixen mai davant de i/u àtones»). Exemple del dossier: «Estudia en la universitat».'
+  },
+  {
+    pregunta: 'En l\'expressió «V<span style="color: red; font-weight: bold;">e</span> amb mi», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'S\'elideix la \'e\' de «Ve» perquè, en contacte de dues vocals àtones on hi ha una \'e\' (la \'e\' de «Ve» i la \'a\' de «amb»), s\'elideix sempre la \'e\' (regla: «Si les dues són àtones i hi ha una e, s\'elideix la e»). Exemple del dossier: «Ve amb mi: elisió».'
+  },
+  {
+    pregunta: 'En l\'expressió «Llengu<span style="color: red; font-weight: bold;">a</span> i literatura», la vocal destacada:',
+    opcions: ["s\'elideix", "no s\'elideix"],
+    resposta_correcta: "no s\'elideix",
+    categoria: 'Elisions',
+    explicacio: 'No s\'elideix la \'a\' de «Llengua» perquè la \'i\' de la conjunció forma diftong amb la \'a\' anterior. Quan una de les vocals és \'i\' o \'u\' i formen diftong, no s\'elideixen (regla: «Si una de les vocals és i o u, i formen diftong, no s\'elideixen»). Exemple del dossier: «Llengua i literatura: no elisió».'
   }
+  // === FIN: 10 preguntes noves sobre Elisions ===
 ];
 
 let preguntesActuals = [];
