@@ -193,6 +193,76 @@ const preguntes = [
     resposta_correcta: 'oberta',
     categoria: 'Vocals',
     explicacio: 'La o és oberta perquè la paraula acaba en -ossa (grossa), tal com indica la regla general de o oberta en mots acabats en -ossa.'
+  },
+  {
+    pregunta: 'Com es pronuncia la lletra destacada de la paraula «cendra»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sorda',
+    categoria: 'Consonants',
+    explicacio: 'La lletra c davant de e (cendra) es pronuncia com a essa sorda [s], segons la regla que indica que la c davant de e o i sona com a [s] sorda.'
+  },
+  {
+    pregunta: 'Com es pronuncia la essa de la paraula «passar»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sorda',
+    categoria: 'Consonants',
+    explicacio: 'El dígraf -ss- (passar) es pronuncia sempre com a essa sorda [s], tal com s\'indica en les regles de les consonants fricatives.'
+  },
+  {
+    pregunta: 'Com es pronuncia la z de la paraula «zero»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'La lletra z (zero) es pronuncia sempre com a essa sonora [z], tal com recullen les regles de les consonants fricatives.'
+  },
+  {
+    pregunta: 'Com es pronuncia la essa de la paraula «casa»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'Una essa situada entre vocals (casa) es pronuncia sonora [z], segons la regla de l\'essa sonora a l\'interior de paraula entre vocals.'
+  },
+  {
+    pregunta: 'Com es pronuncia la essa final de la paraula «cabés»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sorda',
+    categoria: 'Consonants',
+    explicacio: 'Una essa a final de paraula (cabés) es pronuncia sorda [s], segons la regla que indica que la s a final de paraula absoluta és sorda.'
+  },
+  {
+    pregunta: 'En l\'expressió «dos amics», com es pronuncia la essa final de «dos»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'La s final de paraula (dos) seguida d\'una altra paraula que comença per vocal (amics) es sonoritza i es pronuncia [z], tal com indica la regla de fonètica sintàctica.'
+  },
+  {
+    pregunta: 'En l\'expressió «les dones», com es pronuncia la essa final de «les»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'La s final de paraula (les) seguida d\'una consonant sonora (d) es sonoritza i es pronuncia [z], segons la regla de sonorització de la s/ç final davant de consonant sonora.'
+  },
+  {
+    pregunta: 'En l\'expressió «creix a poc a poc», com es pronuncia el so final de «creix»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'El so fricatiu palatal [ʃ] representat per la x (creix) es sonoritza [ʒ] quan va seguit d\'una paraula començada per vocal (a), tal com indica la regla de fonètica sintàctica.'
+  },
+  {
+    pregunta: 'En l\'expressió «maig i juny», com es pronuncia el so final de «maig»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'El so africat palatal sord [tʃ] del digraf -ig (maig) es sonoritza [dʒ] quan apareix en posició final de paraula seguit d\'una vocal (i), segons la regla de sonorització de les consonants palatals.'
+  },
+  {
+    pregunta: 'En l\'expressió «set mesos», com es pronuncia la t final de «set»?',
+    opcions: ['sorda', 'sonora'],
+    resposta_correcta: 'sonora',
+    categoria: 'Consonants',
+    explicacio: 'La consonant oclusiva dental sorda [t] (set) es sonoritza [d] quan va seguida d\'una consonant sonora (m), segons la regla de sonorització de les oclusives en contacte amb consonant sonora.'
   }
 ];
 
