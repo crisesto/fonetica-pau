@@ -122,6 +122,18 @@ button:active {
 .correcte { background: #a8f0b0 !important; }
 .incorrecte { background: #ffb1b1 !important; }
 
+label.opcio-correcta:has(input:checked) {
+  background: #a8f0b0;
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #111111;
+}
+
+label.opcio-incorrecta:has(input:checked) {
+  background: #ffb1b1;
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #111111;
+}
+
 @media (max-width: 34rem) {
   .pestanyes {
     gap: 0.6rem;

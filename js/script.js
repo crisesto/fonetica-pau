@@ -105,18 +105,24 @@ seleccionarCategoria('Vocals');
 test.addEventListener('submit', (event) => {
   event.preventDefault();
   const resposta = document.querySelector('input[name="resposta"]:checked');
+  const opcions = document.querySelectorAll('input[name="resposta"]');
+
+  opcions.forEach((opcio) => {
+    opcio.closest('label').classList.remove('opcio-correcta', 'opcio-incorrecta');
+  });
 
   if (!resposta) {
-    alert('Selecciona una opció abans de corregir.');
     missatge.textContent = 'Selecciona una opció abans de corregir.';
     missatge.className = 'incorrecte';
   } else if (resposta.value === preguntaActual.correcta) {
-    alert('Correcta');
-    missatge.textContent = `Correcte! ${preguntaActual.explicacio}`;
+    resposta.closest('label').classList.add('opcio-correcta');
+    missatge.textContent = `Correcte ✓ ${preguntaActual.explicacio}`;
     missatge.className = 'correcte';
   } else {
-    alert('Incorrecta');
-    missatge.textContent = `No és correcte. ${preguntaActual.explicacio}`;
+    const opcioCorrecta = preguntaActual.opcions.find((opcio) => opcio.valor === preguntaActual.correcta);
+
+    resposta.closest('label').classList.add('opcio-incorrecta');
+    missatge.textContent = `Incorrecte ✗ La resposta correcta és «${opcioCorrecta.text}». ${preguntaActual.explicacio}`;
     missatge.className = 'incorrecte';
   }
 });
