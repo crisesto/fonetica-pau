@@ -1,12 +1,14 @@
+/* ============================================
+   Glassmorphism Redesign — Fonètica PAU
+   ============================================ */
+
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  color: #111111;
-  background-color: #bde7ff;
-  background-image: radial-gradient(#4ba9df 2px, transparent 2px);
-  background-size: 18px 18px;
+  color: #1a2a3a;               /* blau marí molt fosc (més suau que negre) */
   font-weight: 700;
 }
 
+/* --- 1. FONS GENERAL: degradat suau blau ↔ préssec --- */
 body {
   margin: 0;
   min-height: 100vh;
@@ -14,28 +16,38 @@ body {
   place-items: center;
   padding: 2rem 1rem;
   box-sizing: border-box;
+
+  background: linear-gradient(135deg, #a8d8ea 0%, #f7d9c4 50%, #fce4b8 100%);
+  background-attachment: fixed;
 }
 
+/* --- 2. TARGETA PRINCIPAL (glassmorphism) --- */
 main {
   width: min(100%, 42rem);
-  background: #fffdf4;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   padding: clamp(1.5rem, 5vw, 3rem);
-  border: 4px solid #111111;
-  box-shadow: 10px 10px 0 #111111;
 }
 
+/* --- 3. TIPOGRAFIA --- */
 h1 {
   margin-top: 0;
   font-size: clamp(2rem, 6vw, 3rem);
   line-height: 1;
   text-transform: uppercase;
+  color: #1a2a3a;
 }
 
 .instruccions {
   line-height: 1.55;
-  font-weight: 700;
+  color: #2c3e50;
 }
 
+/* --- 4. PESTANTYES (glassmorphism) --- */
 .pestanyes {
   display: flex;
   flex-wrap: wrap;
@@ -45,17 +57,36 @@ h1 {
 
 .pestanya {
   padding: 0.7rem 1rem;
-  background: #ffffff;
-  box-shadow: 4px 4px 0 #111111;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   font-size: 0.9rem;
+  color: #1a2a3a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pestanya:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pestanya:focus-visible {
+  outline: 2px solid rgba(255, 183, 77, 0.7);
+  outline-offset: 2px;
 }
 
 .pestanya.activa {
-  background: #ffe45c;
-  transform: translate(3px, 3px);
-  box-shadow: 1px 1px 0 #111111;
+  background: rgba(255, 183, 77, 0.35);  /* ambre translúcid */
+  border-color: rgba(255, 183, 77, 0.6);
+  box-shadow: 0 4px 16px rgba(255, 183, 77, 0.2);
 }
 
+/* --- 5. CONTENIDORS DE PREGUNTA (glassmorphism) --- */
 fieldset {
   border: 0;
   padding: 0;
@@ -63,99 +94,146 @@ fieldset {
 }
 
 .pregunta-grup {
-  border-top: 3px dashed #111111;
-  padding-top: 1.5rem;
   margin: 0 0 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
 .pregunta-grup:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.feedback {
-  min-height: 1.5rem;
-  margin: 1.2rem 0 0;
-  padding: 0.75rem;
-  border: 3px solid #111111;
-  background: #ffffff;
-  box-shadow: 4px 4px 0 #111111;
-  font-size: 0.95rem;
+  margin-top: 0;
 }
 
 legend {
   font-size: 1.2rem;
   line-height: 1.35;
   margin-bottom: 1rem;
-  color: #6a1b9a;
+  color: #1a2a3a;
 }
 
+/* --- 6. OPCIONS (labels amb glassmorphism) --- */
 label {
   display: block;
   margin: 0.9rem 0;
   padding: 1rem;
-  border: 3px solid #111111;
-  background: #ffffff;
-  box-shadow: 5px 5px 0 #111111;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+label:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 label:has(input:checked) {
-  background: #ffe45c;
-  transform: translate(3px, 3px);
-  box-shadow: 2px 2px 0 #111111;
+  background: rgba(255, 183, 77, 0.3);
+  border-color: rgba(255, 183, 77, 0.5);
+  box-shadow: 0 4px 16px rgba(255, 183, 77, 0.15);
 }
 
 input {
-  accent-color: #111111;
+  accent-color: #e67e22;
   margin-right: 0.6rem;
 }
 
+/* --- 7. BOTÓ DE CORREGIR --- */
 button {
-  border: 3px solid #111111;
-  border-radius: 0;
-  background: #ff7a00;
-  color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(230, 126, 34, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #1a2a3a;
   padding: 1rem 1.5rem;
-  box-shadow: 6px 6px 0 #111111;
+  box-shadow: 0 4px 16px rgba(230, 126, 34, 0.2);
   font: inherit;
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 button:hover,
-button:focus-visible,
-button:active {
-  transform: translate(4px, 4px);
-  box-shadow: 2px 2px 0 #111111;
+button:focus-visible {
+  background: rgba(230, 126, 34, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(230, 126, 34, 0.3);
 }
 
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(230, 126, 34, 0.15);
+}
+
+button:focus-visible {
+  outline: 2px solid rgba(255, 183, 77, 0.7);
+  outline-offset: 2px;
+}
+
+/* --- 8. FEEDBACK (correcte / incorrecte amb vidre) --- */
+.feedback {
+  min-height: 1.5rem;
+  margin: 1.2rem 0 0;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-size: 0.95rem;
+  color: #1a2a3a;
+  transition: all 0.3s ease;
+}
+
+.correcte {
+  background: rgba(168, 240, 176, 0.45) !important;
+  border-color: rgba(76, 175, 80, 0.4) !important;
+}
+
+.incorrecte {
+  background: rgba(255, 177, 177, 0.45) !important;
+  border-color: rgba(244, 67, 54, 0.35) !important;
+}
+
+label.opcio-correcta:has(input:checked) {
+  background: rgba(168, 240, 176, 0.45);
+  border-color: rgba(76, 175, 80, 0.5);
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.2);
+}
+
+label.opcio-incorrecta:has(input:checked) {
+  background: rgba(255, 177, 177, 0.45);
+  border-color: rgba(244, 67, 54, 0.4);
+  box-shadow: 0 4px 16px rgba(244, 67, 54, 0.15);
+}
+
+/* --- 9. MISSATGE GENERAL --- */
 #missatge {
   min-height: 1.5rem;
   margin: 1.5rem 0 0;
   padding: 0.75rem;
-  border: 3px solid #111111;
-  background: #ffffff;
-  box-shadow: 4px 4px 0 #111111;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #1a2a3a;
+  transition: all 0.3s ease;
 }
 
-.correcte { background: #a8f0b0 !important; }
-.incorrecte { background: #ffb1b1 !important; }
-
-label.opcio-correcta:has(input:checked) {
-  background: #a8f0b0;
-  transform: translate(3px, 3px);
-  box-shadow: 2px 2px 0 #111111;
-}
-
-label.opcio-incorrecta:has(input:checked) {
-  background: #ffb1b1;
-  transform: translate(3px, 3px);
-  box-shadow: 2px 2px 0 #111111;
-}
-
+/* --- 10. RESPONSIVE --- */
 @media (max-width: 34rem) {
   .pestanyes {
     gap: 0.6rem;
@@ -163,5 +241,13 @@ label.opcio-incorrecta:has(input:checked) {
 
   .pestanya {
     flex: 1 1 9rem;
+  }
+
+  main {
+    border-radius: 16px;
+  }
+
+  .pregunta-grup {
+    padding: 1rem;
   }
 }
