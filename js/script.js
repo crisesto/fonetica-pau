@@ -58,121 +58,121 @@ const preguntes = [
     pregunta: 'La vocal tònica de la paraula «hivern» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «verd» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «gerro» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «escola» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «porta» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «carxofa» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «herba» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «cercle» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «boca» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «bossa» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «perla» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «ferro» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «terra» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «selva» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «dent» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «vent» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «gos» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «mossa» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «hora» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Oberta',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   },
   {
     pregunta: 'La vocal tònica de la paraula «grossa» és:',
     opcions: ['Oberta', 'Tancada'],
     resposta_correcta: 'Tancada',
-    categoria: 'Vocals obertes i tancades'
+    categoria: 'Vocals'
   }
 ];
 
