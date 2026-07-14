@@ -3,9 +3,8 @@
    ============================================ */
 
 :root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: #1a2a3a;               /* blau marí molt fosc (més suau que negre) */
-  font-weight: 700;
 }
 
 /* --- 1. FONS GENERAL: degradat suau blau ↔ préssec --- */
@@ -112,7 +111,8 @@ legend {
   font-size: 1.1rem;
   line-height: 1.35;
   margin-bottom: 0.6rem;
-  color: #1a2a3a;
+  color: #0a1e3d;               /* blau marí profund i saturat */
+  font-weight: 700;
 }
 
 /* --- 6. OPCIONS (labels amb glassmorphism) --- */
@@ -137,6 +137,8 @@ legend {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #3a3a3a;               /* gris molt fosc, suau i neutre */
+  font-weight: 400;
 }
 
 .opcions label:hover {
@@ -202,7 +204,8 @@ button:focus-visible {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   font-size: 0.95rem;
-  color: #1a2a3a;
+  color: #3a3a3a;               /* gris molt fosc, suau i neutre */
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 
