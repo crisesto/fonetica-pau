@@ -226,7 +226,9 @@ function mostrarPreguntes(preguntesLlista) {
     return `
       <fieldset class="pregunta-grup">
         <legend>${textPregunta}</legend>
-        ${opcionsHTML}
+        <div class="opcions">
+          ${opcionsHTML}
+        </div>
         <div class="feedback" id="feedback-${index}"></div>
       </fieldset>
     `;
