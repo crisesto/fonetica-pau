@@ -36,6 +36,26 @@ h1 {
   font-weight: 700;
 }
 
+.pestanyes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.pestanya {
+  padding: 0.7rem 1rem;
+  background: #ffffff;
+  box-shadow: 4px 4px 0 #111111;
+  font-size: 0.9rem;
+}
+
+.pestanya.activa {
+  background: #ffe45c;
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #111111;
+}
+
 fieldset {
   border: 0;
   padding: 0;
@@ -101,3 +121,13 @@ button:active {
 
 .correcte { background: #a8f0b0 !important; }
 .incorrecte { background: #ffb1b1 !important; }
+
+@media (max-width: 34rem) {
+  .pestanyes {
+    gap: 0.6rem;
+  }
+
+  .pestanya {
+    flex: 1 1 9rem;
+  }
+}
