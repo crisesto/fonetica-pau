@@ -176,34 +176,49 @@ const preguntes = [
   }
 ];
 
-let preguntaActual = preguntes[0];
+let preguntesActuals = [];
 const test = document.querySelector('#test');
 const contenidorPregunta = document.querySelector('#contenidor-pregunta');
 const missatge = document.querySelector('#missatge');
 const pestanyes = document.querySelectorAll('.pestanya');
 
-function mostrarPregunta(pregunta) {
-  const opcionsHTML = pregunta.opcions.map((opcio) => `
-    <label>
-      <input type="radio" name="resposta" value="${opcio.valor}">
-      ${opcio.text}
-    </label>
-  `).join('');
+function mostrarPreguntes(preguntesLlista) {
+  const html = preguntesLlista.map((pregunta, index) => {
+    const textPregunta = pregunta.enunciat || pregunta.pregunta;
 
-  contenidorPregunta.innerHTML = `
-    <fieldset>
-      <legend>${pregunta.enunciat}</legend>
-      ${opcionsHTML}
-    </fieldset>
-    <button type="submit">Corregir</button>
-  `;
+    let opcions;
+    if (typeof pregunta.opcions[0] === 'string') {
+      opcions = pregunta.opcions.map((opcio) => ({
+        text: opcio,
+        valor: opcio.toLowerCase()
+      }));
+    } else {
+      opcions = pregunta.opcions;
+    }
+
+    const opcionsHTML = opcions.map((opcio) => `
+      <label>
+        <input type="radio" name="resposta-${index}" value="${opcio.valor}">
+        ${opcio.text}
+      </label>
+    `).join('');
+
+    return `
+      <fieldset class="pregunta-grup">
+        <legend>${textPregunta}</legend>
+        ${opcionsHTML}
+        <div class="feedback" id="feedback-${index}"></div>
+      </fieldset>
+    `;
+  }).join('');
+
+  contenidorPregunta.innerHTML = html + '<button type="submit">Corregir</button>';
 }
 
 function seleccionarCategoria(categoria) {
-  const preguntesFiltrades = preguntes.filter((pregunta) => pregunta.categoria === categoria);
+  preguntesActuals = preguntes.filter((pregunta) => pregunta.categoria === categoria);
 
-  preguntaActual = preguntesFiltrades[0];
-  mostrarPregunta(preguntaActual);
+  mostrarPreguntes(preguntesActuals);
   missatge.textContent = '';
   missatge.className = '';
 
@@ -224,25 +239,42 @@ seleccionarCategoria('Vocals');
 
 test.addEventListener('submit', (event) => {
   event.preventDefault();
-  const resposta = document.querySelector('input[name="resposta"]:checked');
-  const opcions = document.querySelectorAll('input[name="resposta"]');
 
-  opcions.forEach((opcio) => {
-    opcio.closest('label').classList.remove('opcio-correcta', 'opcio-incorrecta');
+  preguntesActuals.forEach((pregunta, index) => {
+    const resposta = document.querySelector(`input[name="resposta-${index}"]:checked`);
+    const feedback = document.querySelector(`#feedback-${index}`);
+    const opcionsLabels = document.querySelectorAll(`input[name="resposta-${index}"]`);
+
+    opcionsLabels.forEach((opcio) => {
+      opcio.closest('label').classList.remove('opcio-correcta', 'opcio-incorrecta');
+    });
+
+    if (!resposta) {
+      feedback.textContent = 'Selecciona una opció abans de corregir.';
+      feedback.className = 'incorrecte';
+      return;
+    }
+
+    const correcta = pregunta.correcta || pregunta.resposta_correcta?.toLowerCase();
+
+    if (resposta.value === correcta) {
+      resposta.closest('label').classList.add('opcio-correcta');
+      feedback.textContent = `Correcte ✓ ${pregunta.explicacio || ''}`;
+      feedback.className = 'correcte';
+    } else {
+      resposta.closest('label').classList.add('opcio-incorrecta');
+
+      let textCorrecte;
+      if (typeof pregunta.opcions[0] === 'string') {
+        const idx = pregunta.opcions.findIndex((o) => o.toLowerCase() === correcta);
+        textCorrecte = pregunta.opcions[idx];
+      } else {
+        const opcioCorrecta = pregunta.opcions.find((o) => o.valor === correcta);
+        textCorrecte = opcioCorrecta ? opcioCorrecta.text : correcta;
+      }
+
+      feedback.textContent = `Incorrecte ✗ La resposta correcta és «${textCorrecte}». ${pregunta.explicacio || ''}`;
+      feedback.className = 'incorrecte';
+    }
   });
-
-  if (!resposta) {
-    missatge.textContent = 'Selecciona una opció abans de corregir.';
-    missatge.className = 'incorrecte';
-  } else if (resposta.value === preguntaActual.correcta) {
-    resposta.closest('label').classList.add('opcio-correcta');
-    missatge.textContent = `Correcte ✓ ${preguntaActual.explicacio}`;
-    missatge.className = 'correcte';
-  } else {
-    const opcioCorrecta = preguntaActual.opcions.find((opcio) => opcio.valor === preguntaActual.correcta);
-
-    resposta.closest('label').classList.add('opcio-incorrecta');
-    missatge.textContent = `Incorrecte ✗ La resposta correcta és «${opcioCorrecta.text}». ${preguntaActual.explicacio}`;
-    missatge.className = 'incorrecte';
-  }
 });
