@@ -37,11 +37,11 @@ const preguntes = [
     categoria: 'Diftongs/hiats',
     enunciat: 'En la paraula «d<span style="color:red;font-weight:bold">ia</span>», el grup de vocals destacat forma un:',
     opcions: [
-      { text: 'Diftongació o sinalefa', valor: 'diftong' },
-      { text: 'Hiat', valor: 'hiat' }
+      { text: 'diftong', valor: 'diftong' },
+      { text: 'hiat', valor: 'hiat' }
     ],
     correcta: 'hiat',
-    explicacio: 'En la paraula «dia», la «i» i la «a» formen un hiat perquè la «i» és una vocal feble que, en no portar accent, es comporta com a vocal forta en contacte amb una altra vocal forta, separant-se en síl·labes diferents.'
+    explicacio: 'En la paraula «dia», la «i» i la «a» formen un hiat perquè la «i» és una vocal feble que, en no portar accent, es comporta com a vocal forta en contacte amb una altra vocal forta, i se separen en síl·labes diferents.'
   },
   {
     id: 5,
