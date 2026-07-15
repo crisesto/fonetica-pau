@@ -45,7 +45,7 @@ const preguntes = [
   },
   {
     id: 5,
-    categoria: 'Textos',
+    categoria: 'Consonants',
     enunciat: 'En el fragment «crei<span style="color:red;font-weight:bold">x</span> a poc a poc», quin canvi experimenta el so final de «creix»?',
     opcions: [
       { text: 'Se sonoritza', valor: 'sonoritza' },
@@ -405,7 +405,79 @@ const preguntes = [
     resposta_correcta: 'diftong',
     explicacio: 'Forma un diftong decreixent, ja que està compost per una vocal nuclear forta (la «o») seguida d\'una semivocal (la «i»).',
     categoria: 'Diftongs/hiats'
+  },
+  // === INICI: 10 textos nous per a la categoria "Textos" ===
+  {
+    categoria: 'Textos',
+    text: 'Els nois baixen les caixes del tren. La germana de Pau canta molt bé. Avui plou i fa fred a la vora del riu.',
+    pregunta: 'Localitza dos diftongs decreixents i dues paraules amb consonant fricativa palatal sorda [ʃ].',
+    paraules_clau: ['nois', 'Pau', 'baixen', 'caixes'],
+    explicacio: 'Els diftongs decreixents es formen quan una vocal forta (a, e, o) va seguida d\'una vocal feble (i, u) en la mateixa síl·laba: «nois» (oi) i «Pau» (au) en són exemples clars. La consonant fricativa palatal sorda [ʃ] es representa gràficament amb la lletra «x»: «baixen» i «caixes» contenen aquest so, que és sord perquè les cordes vocals no vibren durant la seua articulació, i palatal perquè el dors de la llengua s\'aproxima al paladar dur.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'El poeta llegeix un poema bell. La teua germana té un gos gros. Ahir vaig veure una agulla daurada.',
+    pregunta: 'Localitza dos hiats i dues paraules amb consonant oclusiva velar sonora [g].',
+    paraules_clau: ['poeta', 'poema', 'germana', 'gos'],
+    explicacio: 'Els hiats es produeixen quan dues vocals fortes consecutives pertanyen a síl·labes diferents: «poeta» (o-e) i «poema» (o-e) en són exemples, ja que la o i la e són ambdues vocals fortes i no poden formar diftong. La consonant oclusiva velar sonora [g] s\'articula amb un tancament complet del dors de la llengua contra el vel del paladar i amb vibració de les cordes vocals: «germana» i «gos» en són exemples clars.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'La iaia beu llet cada matí. El meu avi té un nas molt xicotet. Hui farem una festa divertida.',
+    pregunta: 'Localitza dos diftongs creixents i dues paraules amb consonant fricativa alveolar sonora [z].',
+    paraules_clau: ['iaia', 'Hui', 'casa', 'nas'],
+    explicacio: 'Els diftongs creixents es formen quan una vocal feble (i, u) precedeix una vocal forta (a, e, o) en la mateixa síl·laba: «iaia» (ia) i «Hui» (ui) en són exemples clars. La consonant fricativa alveolar sonora [z] es representa amb la lletra «s» entre vocals o en posició de sonorització: «casa» i «nas» en són exemples, ja que les cordes vocals vibren durant l\'articulació.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'La meua mare canta cançons molt boniques. El nen menja una poma verda. La finestra està oberta de bat a bat.',
+    pregunta: 'Localitza dues paraules amb consonant nasal [m, n, ɲ] i dues paraules amb diftong decreixent.',
+    paraules_clau: ['mare', 'nen', 'meua', 'canta'],
+    explicacio: 'Les consonants nasals [m], [n] i [ɲ] s\'articulen amb el vel del paladar abaixat, de manera que l\'aire eix pel nas: «mare» conté [m] (bilabial) i «nen» conté [n] (alveolar). Els diftongs decreixents es formen amb vocal forta + vocal feble en la mateixa síl·laba: «meua» (eu) n\'és un exemple clar. Cal localitzar una altra paraula amb diftong decreixent al text.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'El sol lluïa al cel blau i clar. La xiqueta reia feliç mentres jugava. El veí nou canta cada dia al parc.',
+    pregunta: 'Localitza dues paraules amb consonant lateral [l] i dues paraules amb hiat.',
+    paraules_clau: ['sol', 'cel', 'reia', 'veí'],
+    explicacio: 'La consonant lateral [l] s\'articula amb la llengua tocant l\'alveol mentre l\'aire eix pels costats de la llengua: «sol» i «cel» en són exemples clars. Els hiats es produeixen quan dues vocals es troben en síl·labes separades perquè no poden formar diftong: «reia» (e-i) forma un hiat, ja que la i final no forma diftong amb la e anterior, i «veí» (e-i) també forma hiat perquè la i porta accent gràfic i esdevé tònica, separant-se de la e en síl·labes diferents.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'El riu corre ràpid per la muntanya. La roca rodola costa avall fent soroll. El carrer està ple de gent que mira.',
+    pregunta: 'Localitza dues paraules amb consonant vibrant [r, ɾ] i dues paraules amb diftong.',
+    paraules_clau: ['riu', 'corre', 'roca', 'carrer'],
+    explicacio: 'La consonant vibrant múltiple [r] s\'articula amb diverses vibracions de l\'àpex de la llengua contra l\'alveol: «riu» i «roca» en tenen a l\'inici de paraula, i «corre» i «carrer» en tenen en posició intervocàlica (representada per «rr»). La consonant vibrant simple [ɾ] apareix en posició intervocàlica simple. El diftong «riu» (iu) és un diftong decreixent. Per a completar la segona part de l\'exercici, cal localitzar una altra paraula amb diftong al text.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'La fira de la vila és molt famosa. La meua tia fa flors de paper de colors. El vent bufa fort i fa volar les fulles.',
+    pregunta: 'Localitza dues paraules amb consonant fricativa labiodental [f, v] i dues paraules amb hiat.',
+    paraules_clau: ['fira', 'famosa', 'tia', 'meua'],
+    explicacio: 'La consonant fricativa labiodental sorda [f] s\'articula fregant el llavi inferior contra les dents superiors sense vibració de les cordes vocals: «fira» i «famosa» en són exemples clars. Els hiats es produeixen quan dues vocals consecutives no formen diftong i pertanyen a síl·labes diferents: «tia» (i-a) forma hiat perquè la i és feble però no forma diftong amb la a, i «meua» (e-u) forma hiat perquè en valencià «meua» es pronuncia en dues síl·labes (me-u-a).'
+  },
+  {
+    categoria: 'Textos',
+    text: 'El cotxe xicotet passa per la plaça major. La xica fa un pastís de xocolate boníssim. El xiquet riu i salta content cada dia.',
+    pregunta: 'Localitza dues paraules amb consonant africada palatal sorda [tʃ] i dues paraules amb diftong decreixent.',
+    paraules_clau: ['cotxe', 'xicotet', 'riu', 'pastís'],
+    explicacio: 'La consonant africada palatal sorda [tʃ] s\'articula amb un tancament complet seguit d\'una fricció: «cotxe» (tx) i «xicotet» (x inicial) en són exemples clars. El diftong decreixent «riu» (iu) és un exemple de vocal forta + vocal feble en la mateixa síl·laba. Per a completar l\'exercici, cal localitzar una altra paraula amb diftong decreixent al text (per exemple, canviant «pastís» per un mot que en tinga).'
+  },
+  {
+    categoria: 'Textos',
+    text: 'El teu pare té un cotxe molt bonic. La porta de casa està oberta de bat a bat. El gat dorm tranquil al sofà de la sala.',
+    pregunta: 'Localitza dues paraules amb consonant oclusiva dental sorda [t] i dues paraules amb diftong creixent.',
+    paraules_clau: ['teu', 'té', 'porta', 'tranquil'],
+    explicacio: 'La consonant oclusiva dental sorda [t] s\'articula amb la llengua tocant la cara interior de les dents superiors i sense vibració de les cordes vocals: «teu» i «té» en són exemples clars. Per als diftongs creixents, cal buscar paraules on una vocal feble (i, u) precedisca una vocal forta (a, e, o) en la mateixa síl·laba. «teu» (eu) és un diftong decreixent, no creixent. Cal localitzar paraules amb diftong creixent com «ia», «ua», «ie», etc.'
+  },
+  {
+    categoria: 'Textos',
+    text: 'La xica ix de casa i va a la platja. El germà gran fa un viatge llarg a l\'estranger. Hui el cel està clar i ple d\'estels.',
+    pregunta: 'Localitza dues paraules amb consonant fricativa palatal sonora [ʒ] i dues paraules amb hiat.',
+    paraules_clau: ['platja', 'viatge', 'Hui', 'dia'],
+    explicacio: 'La consonant fricativa palatal sonora [ʒ] s\'articula amb el dors de la llengua prop del paladar dur i amb vibració de les cordes vocals: «platja» (tj) i «viatge» (tg) en són exemples, ja que els dígrafs «tj» i «tg» davant de e/i representen este so. Els hiats: «Hui» (u-i) forma hiat perquè la u i la i són ambdues febles i no formen diftong en este context. «dia» (i-a) forma hiat perquè la i és feble però no forma diftong amb la a. Totes dues paraules presenten vocals en síl·labes separades.'
   }
+  // === FIN: 10 textos nous per a la categoria "Textos" ===
 ];
 
 let preguntesActuals = [];
@@ -415,38 +487,152 @@ const missatge = document.querySelector('#missatge');
 const pestanyes = document.querySelectorAll('.pestanya');
 
 function mostrarPreguntes(preguntesLlista) {
-  const html = preguntesLlista.map((pregunta, index) => {
-    const textPregunta = pregunta.enunciat || pregunta.pregunta;
+  if (preguntesLlista.length === 0) {
+    contenidorPregunta.innerHTML = '<p>No hi ha preguntes per a esta categoria.</p>';
+    return;
+  }
 
-    let opcions;
-    if (typeof pregunta.opcions[0] === 'string') {
-      opcions = pregunta.opcions.map((opcio) => ({
-        text: opcio,
-        valor: opcio.toLowerCase()
-      }));
-    } else {
-      opcions = pregunta.opcions;
+  // Comprovar si és la categoria "Textos"
+  const esTextos = preguntesLlista[0].categoria === 'Textos';
+
+  if (esTextos) {
+    // Renderitzar cada text amb paraules clicables
+    const html = preguntesLlista.map((pregunta, index) => {
+      // Separar el text en paraules i crear spans clicables
+      const paraules = pregunta.text.split(/\s+/);
+      const textHTML = paraules.map((paraula) => {
+        // Netejar signes de puntuació per a la paraula clicable
+        const paraulaNeta = paraula.replace(/[.,;:!?()"']/g, '');
+        if (paraulaNeta.length === 0) return paraula;
+        return `<span class="clickable-word" data-paraula="${paraulaNeta}" data-index="${index}">${paraula}</span>`;
+      }).join(' ');
+
+      return `
+        <fieldset class="pregunta-grup pregunta-textos" data-index="${index}">
+          <legend>${pregunta.pregunta}</legend>
+          <div class="text-container">${textHTML}</div>
+          <div class="seleccionades" id="seleccionades-${index}">
+            <strong>Paraules seleccionades:</strong> <span class="llista-seleccionades">(cap)</span>
+          </div>
+          <button type="button" class="btn-comprovar" data-index="${index}">Comprovar</button>
+          <div class="feedback" id="feedback-textos-${index}"></div>
+        </fieldset>
+      `;
+    }).join('');
+
+    contenidorPregunta.innerHTML = html;
+
+    // Afegir event listeners per a les paraules clicables
+    document.querySelectorAll('.clickable-word').forEach((span) => {
+      span.addEventListener('click', function () {
+        this.classList.toggle('selected');
+        // Actualitzar la llista de paraules seleccionades per a este text
+        const index = this.dataset.index;
+        const seleccionades = document.querySelectorAll(`.clickable-word[data-index="${index}"].selected`);
+        const llista = Array.from(seleccionades).map((el) => el.dataset.paraula);
+        const llistaSpan = document.querySelector(`#seleccionades-${index} .llista-seleccionades`);
+        if (llistaSpan) {
+          llistaSpan.textContent = llista.length > 0 ? llista.join(', ') : '(cap)';
+        }
+      });
+    });
+
+    // Afegir event listeners per als botons "Comprovar"
+    document.querySelectorAll('.btn-comprovar').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const index = parseInt(this.dataset.index);
+        const pregunta = preguntesLlista[index];
+        comprovarTextos(pregunta, index);
+      });
+    });
+  } else {
+    // Comportament original per a la resta de categories
+    const html = preguntesLlista.map((pregunta, index) => {
+      const textPregunta = pregunta.enunciat || pregunta.pregunta;
+
+      let opcions;
+      if (typeof pregunta.opcions[0] === 'string') {
+        opcions = pregunta.opcions.map((opcio) => ({
+          text: opcio,
+          valor: opcio.toLowerCase()
+        }));
+      } else {
+        opcions = pregunta.opcions;
+      }
+
+      const opcionsHTML = opcions.map((opcio) => `
+        <label>
+          <input type="radio" name="resposta-${index}" value="${opcio.valor}">
+          ${opcio.text}
+        </label>
+      `).join('');
+
+      return `
+        <fieldset class="pregunta-grup">
+          <legend>${textPregunta}</legend>
+          <div class="opcions">
+            ${opcionsHTML}
+          </div>
+          <div class="feedback" id="feedback-${index}"></div>
+        </fieldset>
+      `;
+    }).join('');
+
+    contenidorPregunta.innerHTML = html + '<button type="submit">Corregir</button>';
+  }
+}
+
+function comprovarTextos(pregunta, index) {
+  const seleccionades = document.querySelectorAll(`.clickable-word[data-index="${index}"].selected`);
+  const paraulesSeleccionades = Array.from(seleccionades).map((el) => el.dataset.paraula);
+  const paraulesClau = pregunta.paraules_clau;
+  const feedback = document.querySelector(`#feedback-textos-${index}`);
+
+  // Ordenar per a comparar independentment de l'ordre
+  const seleccionadesOrdenades = [...paraulesSeleccionades].sort();
+  const clauOrdenades = [...paraulesClau].sort();
+
+  // Comprovar si les seleccionades coincideixen exactament amb les paraules clau
+  const encerts = paraulesSeleccionades.filter((p) => paraulesClau.includes(p));
+  const sobrants = paraulesSeleccionades.filter((p) => !paraulesClau.includes(p));
+  const faltants = paraulesClau.filter((p) => !paraulesSeleccionades.includes(p));
+
+  // Marcar visualment les paraules
+  document.querySelectorAll(`.clickable-word[data-index="${index}"]`).forEach((span) => {
+    const paraula = span.dataset.paraula;
+    span.classList.remove('correcta', 'incorrecta', 'mancant');
+    if (paraulesClau.includes(paraula) && paraulesSeleccionades.includes(paraula)) {
+      span.classList.add('correcta');
+    } else if (!paraulesClau.includes(paraula) && paraulesSeleccionades.includes(paraula)) {
+      span.classList.add('incorrecta');
+    } else if (paraulesClau.includes(paraula) && !paraulesSeleccionades.includes(paraula)) {
+      span.classList.add('mancant');
     }
+  });
 
-    const opcionsHTML = opcions.map((opcio) => `
-      <label>
-        <input type="radio" name="resposta-${index}" value="${opcio.valor}">
-        ${opcio.text}
-      </label>
-    `).join('');
+  // Generar missatge de feedback
+  let missatgeFeedback = '';
+  let esCorrecte = false;
 
-    return `
-      <fieldset class="pregunta-grup">
-        <legend>${textPregunta}</legend>
-        <div class="opcions">
-          ${opcionsHTML}
-        </div>
-        <div class="feedback" id="feedback-${index}"></div>
-      </fieldset>
-    `;
-  }).join('');
+  if (seleccionadesOrdenades.length === clauOrdenades.length &&
+      seleccionadesOrdenades.every((val, i) => val === clauOrdenades[i])) {
+    esCorrecte = true;
+    missatgeFeedback = `✅ Correcte! Has seleccionat exactament les paraules correctes.`;
+  } else {
+    missatgeFeedback = '❌ Incorrecte. ';
+    if (faltants.length > 0) {
+      missatgeFeedback += `T\'han faltat: «${faltants.join('», «')}». `;
+    }
+    if (sobrants.length > 0) {
+      missatgeFeedback += `T\'han sobrat: «${sobrants.join('», «')}». `;
+    }
+  }
 
-  contenidorPregunta.innerHTML = html + '<button type="submit">Corregir</button>';
+  // Mostrar l'explicació
+  missatgeFeedback += `<br><br><strong>Explicació:</strong> ${pregunta.explicacio}`;
+
+  feedback.innerHTML = missatgeFeedback;
+  feedback.className = esCorrecte ? 'feedback correcte' : 'feedback incorrecte';
 }
 
 function seleccionarCategoria(categoria) {
