@@ -334,8 +334,78 @@ const preguntes = [
     resposta_correcta: "no s\'elideix",
     categoria: 'Elisions',
     explicacio: 'No s\'elideix la \'a\' de «Llengua» perquè la \'i\' de la conjunció forma diftong amb la \'a\' anterior. Quan una de les vocals és \'i\' o \'u\' i formen diftong, no s\'elideixen (regla: «Si una de les vocals és i o u, i formen diftong, no s\'elideixen»). Exemple del dossier: «Llengua i literatura: no elisió».'
-  }
+  },
   // === FIN: 10 preguntes noves sobre Elisions ===
+  {
+    pregunta: 'En la paraula «c<span style="color: red; font-weight: bold;">ui</span>na», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'diftong',
+    explicacio: 'Segons la normativa, el grup «ui» és especial però s\'ha de recordar que sempre forma un diftong, independentment de si es pronuncia de manera creixent o decreixent.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «p<span style="color: red; font-weight: bold;">oe</span>ta», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'hiat',
+    explicacio: 'Quan dues vocals fortes es troben juntes («o» i «e»), no fan mai un diftong. Cadascuna vol el seu propi espai i formen un hiat.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «p<span style="color: red; font-weight: bold;">aí</span>s», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'hiat',
+    explicacio: 'Si una vocal feble porta accent gràfic, es torna forta. L\'accent li dona poder per a formar una síl·laba ella sola, de manera que trenca el diftong i crea un hiat.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «q<span style="color: red; font-weight: bold;">üe</span>stió», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'diftong',
+    explicacio: 'Forma un diftong creixent compost per una semiconsonant (la «u» amb dièresi) precedida per una «q» i seguida per la vocal nuclear «e».',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «v<span style="color: red; font-weight: bold;">eï</span>nat», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'hiat',
+    explicacio: 'La dièresi en la vocal feble és un senyal ortogràfic que avisa explícitament que s\'han de separar les vocals i que, per tant, no formen diftong.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «Màr<span style="color: red; font-weight: bold;">iu</span>s», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'hiat',
+    explicacio: 'És una excepció molt important: la combinació de vocals «iu» no forma diftong en els mots d\'origen culte acabats en «-us» o «-um».',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «her<span style="color: red; font-weight: bold;">eu</span>», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'diftong',
+    explicacio: 'Forma un diftong decreixent, on hi ha una vocal nuclear (la vocal forta «e») seguida immediatament d\'una semivocal (la «u»).',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «cam<span style="color: red; font-weight: bold;">ió</span>», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'hiat',
+    explicacio: 'Ací es produeix la \'rebel·lió\' de les vocals febles: si una vocal feble precedeix una forta i al davant no hi ha cap «g» ni «q», es forma un hiat i se separen.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «<span style="color: red; font-weight: bold;">io</span>gurt», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'diftong',
+    explicacio: 'És un diftong creixent, ja que la vocal «i» funciona de manera especial com a semiconsonant quan es troba al començament d\'un mot i va seguida d\'una altra vocal.',
+    categoria: 'Diftongs i hiats'
+  },
+  {
+    pregunta: 'En la paraula «b<span style="color: red; font-weight: bold;">oi</span>ra», el grup de vocals destacat forma un:',
+    opcions: ['diftong', 'hiat'],
+    resposta_correcta: 'diftong',
+    explicacio: 'Forma un diftong decreixent, ja que està compost per una vocal nuclear forta (la «o») seguida d\'una semivocal (la «i»).',
+    categoria: 'Diftongs i hiats'
+  }
 ];
 
 let preguntesActuals = [];
