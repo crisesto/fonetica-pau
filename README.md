@@ -4,7 +4,7 @@ Aplicació web interactiva tipus test per a practicar la fonètica del valencià
 
 ## Descripció de l'aplicació
 
-Aquesta aplicació és una eina interactiva de repàs dissenyada perquè l'alumnat avalue i consolide la seua capacitat de discriminar fenòmens de fonètica i ortografia valenciana. Mitjançant exercicis tipus test i activitats d'identificació de sons consonàntics i vocàlics directament sobre textos, l'alumnat pot posar a prova els seus coneixements teòrics i pràctics de manera autònoma, rebent retroalimentació immediata.
+Aquesta aplicació és una eina interactiva de repàs dissenyada perquè l'alumnat avalue i consolide la seua capacitat de discriminar fenòmens de fonètica i ortografia valenciana. Mitjançant exercicis tipus test i activitats d'identificació de sons consonàntics i vocàlics directament sobre textos, l'alumnat pot posar a prova els seus coneixements teòrics i pràctics de manera autònoma i rebre retroalimentació immediata.
 
 ## Destinataris
 
