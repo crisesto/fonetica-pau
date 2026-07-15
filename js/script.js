@@ -408,74 +408,74 @@ const preguntes = [
   },
   // === INICI: 10 textos nous per a la categoria "Textos" ===
   {
-    categoria: 'Textos',
-    text: 'Els nois baixen les caixes del tren. La germana de Pau canta molt bé. Avui plou i fa fred a la vora del riu.',
-    pregunta: 'Localitza dos diftongs decreixents i dues paraules amb consonant fricativa palatal sorda [ʃ].',
-    paraules_clau: ['nois', 'Pau', 'baixen', 'caixes'],
-    explicacio: 'Els diftongs decreixents es formen quan una vocal forta (a, e, o) va seguida d\'una vocal feble (i, u) en la mateixa síl·laba: «nois» (oi) i «Pau» (au) en són exemples clars. La consonant fricativa palatal sorda [ʃ] es representa gràficament amb la lletra «x»: «baixen» i «caixes» contenen aquest so, que és sord perquè les cordes vocals no vibren durant la seua articulació, i palatal perquè el dors de la llengua s\'aproxima al paladar dur.'
+    categoria: "Textos",
+    text: "El músic tocava una melodia suau amb la seua dolçaina nova. \nLa gent de la plaça ballava sense parar sota el sol radiant. \nUna zebra del zoològic mirava curiosa per damunt del mur alt.",
+    pregunta: "Localitza totes les paraules que continguen el so fricatiu alveolar sonor.",
+    paraules_clau: ["músic", "zebra", "zoològic", "curiosa"],
+    explicacio: "El so fricatiu alveolar sonor [z] es representa amb la lletra 's' entre vocals (com a «músic» i «curiosa») i amb la lletra 'z' a inici de paraula i darrere de consonant (com a «zebra» i «zoològic»)."
   },
   {
-    categoria: 'Textos',
-    text: 'El poeta llegeix un poema bell. La teua germana té un gos gros. Ahir vaig veure una agulla daurada.',
-    pregunta: 'Localitza dos hiats i dues paraules amb consonant oclusiva velar sonora [g].',
-    paraules_clau: ['poeta', 'poema', 'germana', 'gos'],
-    explicacio: 'Els hiats es produeixen quan dues vocals fortes consecutives pertanyen a síl·labes diferents: «poeta» (o-e) i «poema» (o-e) en són exemples, ja que la o i la e són ambdues vocals fortes i no poden formar diftong. La consonant oclusiva velar sonora [g] s\'articula amb un tancament complet del dors de la llengua contra el vel del paladar i amb vibració de les cordes vocals: «germana» i «gos» en són exemples clars.'
+    categoria: "Textos",
+    text: "El metge de guàrdia va atendre el xiquet amb molta rapidesa. \nAl carrer un cotxe roig havia frenat de colp prop del pas. \nEl viatge va acabar sent una autèntica aventura inoblidable.",
+    pregunta: "Localitza totes les paraules que continguen el so africat palatal sord.",
+    paraules_clau: ["xiquet", "cotxe", "roig"],
+    explicacio: "El so africat palatal sord [tʃ] es pot representar amb 'x' a l'inici («xiquet»), amb el dígraf 'tx' entre vocals («cotxe») i amb 'ig' a final de paraula després de vocal («roig»)."
   },
   {
-    categoria: 'Textos',
-    text: 'La iaia beu llet cada matí. El meu avi té un nas molt xicotet. Hui farem una festa divertida.',
-    pregunta: 'Localitza dos diftongs creixents i dues paraules amb consonant fricativa alveolar sonora [z].',
-    paraules_clau: ['iaia', 'Hui', 'casa', 'nas'],
-    explicacio: 'Els diftongs creixents es formen quan una vocal feble (i, u) precedeix una vocal forta (a, e, o) en la mateixa síl·laba: «iaia» (ia) i «Hui» (ui) en són exemples clars. La consonant fricativa alveolar sonora [z] es representa amb la lletra «s» entre vocals o en posició de sonorització: «casa» i «nas» en són exemples, ja que les cordes vocals vibren durant l\'articulació.'
+    categoria: "Textos",
+    text: "La xiqueta collia fullaraca prop de la vella cabanya del bosc. \nEl seu germà portava un cabàs ple de pomes de la campanya. \nAl final del dia van fer una gran foguera amb tota la llenya.",
+    pregunta: "Localitza totes les paraules que continguen el so lateral palatal.",
+    paraules_clau: ["collia", "fullaraca", "vella", "llenya"],
+    explicacio: "El so lateral palatal [ʎ] és sempre sonor i es representa gràficament amb el dígraf 'll', tal com s'observa a les paraules «collia», «fullaraca», «vella» i «llenya»."
   },
   {
-    categoria: 'Textos',
-    text: 'La meua mare canta cançons molt boniques. El nen menja una poma verda. La finestra està oberta de bat a bat.',
-    pregunta: 'Localitza dues paraules amb consonant nasal [m, n, ɲ] i dues paraules amb diftong decreixent.',
-    paraules_clau: ['mare', 'nen', 'meua', 'canta'],
-    explicacio: 'Les consonants nasals [m], [n] i [ɲ] s\'articulen amb el vel del paladar abaixat, de manera que l\'aire eix pel nas: «mare» conté [m] (bilabial) i «nen» conté [n] (alveolar). Els diftongs decreixents es formen amb vocal forta + vocal feble en la mateixa síl·laba: «meua» (eu) n\'és un exemple clar. Cal localitzar una altra paraula amb diftong decreixent al text.'
+    categoria: "Textos",
+    text: "El gos de la meua veïna sempre bordava quan passava algú. \nAhir vaig comprar un paquet de formatge al mercat del barri. \nLa guerra havia deixat un gran forat a la paret de pedra.",
+    pregunta: "Localitza totes les paraules que continguen el so oclusiu velar sonor.",
+    paraules_clau: ["gos", "algú", "guerra", "gran"],
+    explicacio: "L'oclusiu velar sonor [g] s'escriu amb 'g' davant de a, o, u o consonant («gos», «algú», «gran») i amb el dígraf 'gu' davant de les vocals e, i («guerra»)."
   },
   {
-    categoria: 'Textos',
-    text: 'El sol lluïa al cel blau i clar. La xiqueta reia feliç mentres jugava. El veí nou canta cada dia al parc.',
-    pregunta: 'Localitza dues paraules amb consonant lateral [l] i dues paraules amb hiat.',
-    paraules_clau: ['sol', 'cel', 'reia', 'veí'],
-    explicacio: 'La consonant lateral [l] s\'articula amb la llengua tocant l\'alveol mentre l\'aire eix pels costats de la llengua: «sol» i «cel» en són exemples clars. Els hiats es produeixen quan dues vocals es troben en síl·labes separades perquè no poden formar diftong: «reia» (e-i) forma un hiat, ja que la i final no forma diftong amb la e anterior, i «veí» (e-i) també forma hiat perquè la i porta accent gràfic i esdevé tònica, separant-se de la e en síl·labes diferents.'
+    categoria: "Textos",
+    text: "A la ciutat de Xàtiva feia un dia radiant i molt calorós. \nLes famílies passejaven felices per la font vella de pedra. \nEl dibuix del llibre antic mostrava un paisatge ben bonic.",
+    pregunta: "Localitza totes les paraules que continguen el so fricatiu labiodental sord.",
+    paraules_clau: ["feia", "famílies", "felices", "font"],
+    explicacio: "El so fricatiu labiodental sord [f] es representa en valencià exclusivament amb la lletra 'f', com ocorre als mots «feia», «famílies», «felices» i «font»."
   },
   {
-    categoria: 'Textos',
-    text: 'El riu corre ràpid per la muntanya. La roca rodola costa avall fent soroll. El carrer està ple de gent que mira.',
-    pregunta: 'Localitza dues paraules amb consonant vibrant [r, ɾ] i dues paraules amb diftong.',
-    paraules_clau: ['riu', 'corre', 'roca', 'carrer'],
-    explicacio: 'La consonant vibrant múltiple [r] s\'articula amb diverses vibracions de l\'àpex de la llengua contra l\'alveol: «riu» i «roca» en tenen a l\'inici de paraula, i «corre» i «carrer» en tenen en posició intervocàlica (representada per «rr»). La consonant vibrant simple [ɾ] apareix en posició intervocàlica simple. El diftong «riu» (iu) és un diftong decreixent. Per a completar la segona part de l\'exercici, cal localitzar una altra paraula amb diftong al text.'
+    categoria: "Textos",
+    text: "El grup de joves va decidir organitzar una festa sorpresa. \nHi havia dotze convidats esperant al saló de la gran casa. \nPotser l'atzar faria que arribaren més prompte de l'esperat.",
+    pregunta: "Localitza totes les paraules que continguen el so africat alveolar sonor.",
+    paraules_clau: ["organitzar", "dotze", "atzar"],
+    explicacio: "El so africat alveolar sonor [dz] es representa gràficament de manera específica amb el dígraf 'tz', present en les paraules «organitzar», «dotze» i «atzar»."
   },
   {
-    categoria: 'Textos',
-    text: 'La fira de la vila és molt famosa. La meua tia fa flors de paper de colors. El vent bufa fort i fa volar les fulles.',
-    pregunta: 'Localitza dues paraules amb consonant fricativa labiodental [f, v] i dues paraules amb hiat.',
-    paraules_clau: ['fira', 'famosa', 'tia', 'meua'],
-    explicacio: 'La consonant fricativa labiodental sorda [f] s\'articula fregant el llavi inferior contra les dents superiors sense vibració de les cordes vocals: «fira» i «famosa» en són exemples clars. Els hiats es produeixen quan dues vocals consecutives no formen diftong i pertanyen a síl·labes diferents: «tia» (i-a) forma hiat perquè la i és feble però no forma diftong amb la a, i «meua» (e-u) forma hiat perquè en valencià «meua» es pronuncia en dues síl·labes (me-u-a).'
+    categoria: "Textos",
+    text: "El corredor ràpid va passar la línia de meta molt esgotat. \nUna gran massa de gent aplaudia amb entusiasme des de la grada. \nLa carrera havia deixat un rastre d'emoció a tota la pista.",
+    pregunta: "Localitza totes les paraules que continguen el so ròtic vibrant (la r forta).",
+    paraules_clau: ["corredor", "ràpid", "carrera", "rastre"],
+    explicacio: "El so ròtic vibrant [r] s'escriu amb el dígraf 'rr' entre vocals («corredor», «carrera») i amb una sola 'r' quan va a inici de paraula («ràpid», «rastre») o darrere d'algunes consonants."
   },
   {
-    categoria: 'Textos',
-    text: 'El cotxe xicotet passa per la plaça major. La xica fa un pastís de xocolate boníssim. El xiquet riu i salta content cada dia.',
-    pregunta: 'Localitza dues paraules amb consonant africada palatal sorda [tʃ] i dues paraules amb diftong decreixent.',
-    paraules_clau: ['cotxe', 'xicotet', 'riu', 'pastís'],
-    explicacio: 'La consonant africada palatal sorda [tʃ] s\'articula amb un tancament complet seguit d\'una fricció: «cotxe» (tx) i «xicotet» (x inicial) en són exemples clars. El diftong decreixent «riu» (iu) és un exemple de vocal forta + vocal feble en la mateixa síl·laba. Per a completar l\'exercici, cal localitzar una altra paraula amb diftong decreixent al text (per exemple, canviant «pastís» per un mot que en tinga).'
+    categoria: "Textos",
+    text: "La meua cunyada va portar una safata de castanyes al forn. \nAquell any passat vam plantar un codonyer a la muntanya. \nAra trèiem profit d'aquell disseny tan bonic que vam fer.",
+    pregunta: "Localitza totes les paraules que continguen el so nasal palatal.",
+    paraules_clau: ["cunyada", "castanyes", "any", "codonyer", "muntanya", "disseny"],
+    explicacio: "El so nasal palatal [ɲ] és sonor i es representa exclusivament amb el dígraf 'ny'. En aquest text apareix a «cunyada», «castanyes», «any», «codonyer», «muntanya» i «disseny»."
   },
   {
-    categoria: 'Textos',
-    text: 'El teu pare té un cotxe molt bonic. La porta de casa està oberta de bat a bat. El gat dorm tranquil al sofà de la sala.',
-    pregunta: 'Localitza dues paraules amb consonant oclusiva dental sorda [t] i dues paraules amb diftong creixent.',
-    paraules_clau: ['teu', 'té', 'porta', 'tranquil'],
-    explicacio: 'La consonant oclusiva dental sorda [t] s\'articula amb la llengua tocant la cara interior de les dents superiors i sense vibració de les cordes vocals: «teu» i «té» en són exemples clars. Per als diftongs creixents, cal buscar paraules on una vocal feble (i, u) precedisca una vocal forta (a, e, o) en la mateixa síl·laba. «teu» (eu) és un diftong decreixent, no creixent. Cal localitzar paraules amb diftong creixent com «ia», «ua», «ie», etc.'
+    categoria: "Textos",
+    text: "El museu mostrava una col·lecció d'art antic impressionant. \nLa xicona visitava la sala principal amb moltíssima il·lusió. \nLa casa guardava una aquarel·la d'una cèl·lula ben amagada.",
+    pregunta: "Localitza totes les paraules que continguen el so lateral alveolar geminat.",
+    paraules_clau: ["col·lecció", "il·lusió", "aquarel·la", "cèl·lula"],
+    explicacio: "El so lateral alveolar geminat [l·l] es pronuncia com una ela allargada i s'escriu sempre amb el grup gràfic de la ela geminada 'l·l', present en aquestes quatre paraules cultes."
   },
   {
-    categoria: 'Textos',
-    text: 'La xica ix de casa i va a la platja. El germà gran fa un viatge llarg a l\'estranger. Hui el cel està clar i ple d\'estels.',
-    pregunta: 'Localitza dues paraules amb consonant fricativa palatal sonora [ʒ] i dues paraules amb hiat.',
-    paraules_clau: ['platja', 'viatge', 'Hui', 'dia'],
-    explicacio: 'La consonant fricativa palatal sonora [ʒ] s\'articula amb el dors de la llengua prop del paladar dur i amb vibració de les cordes vocals: «platja» (tj) i «viatge» (tg) en són exemples, ja que els dígrafs «tj» i «tg» davant de e/i representen este so. Els hiats: «Hui» (u-i) forma hiat perquè la u i la i són ambdues febles i no formen diftong en este context. «dia» (i-a) forma hiat perquè la i és feble però no forma diftong amb la a. Totes dues paraules presenten vocals en síl·labes separades.'
+    categoria: "Textos",
+    text: "El mestre d'escacs va preparar el tauler dibuixant les caselles. \nUn xaval xicotet mirava la caixa de fusta amb molta atenció. \nAquell dia jugarien una partida important a la ciutat de Xàtiva.",
+    pregunta: "Localitza totes les paraules que continguen el so fricatiu palatal sord.",
+    paraules_clau: ["dibuixant", "caixa", "Xàtiva"],
+    explicacio: "El so fricatiu palatal sord [ʃ] es pot representar amb 'x' a inici de paraula com a «Xàtiva» i amb el grup 'ix' darrere de vocal (com a «dibuixant» i «caixa»)."
   }
   // === FIN: 10 textos nous per a la categoria "Textos" ===
 ];
