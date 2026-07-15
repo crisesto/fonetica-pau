@@ -481,6 +481,16 @@ const preguntes = [
 ];
 
 let preguntesActuals = [];
+let encerts = 0;
+let errors = 0;
+const marcadorEncerts = document.querySelector('#encerts-comptador');
+const marcadorErrors = document.querySelector('#errors-comptador');
+
+function actualitzarMarcador() {
+  marcadorEncerts.textContent = encerts;
+  marcadorErrors.textContent = errors;
+}
+
 const test = document.querySelector('#test');
 const contenidorPregunta = document.querySelector('#contenidor-pregunta');
 const missatge = document.querySelector('#missatge');
@@ -593,7 +603,7 @@ function comprovarTextos(pregunta, index) {
   const clauOrdenades = [...paraulesClau].sort();
 
   // Comprovar si les seleccionades coincideixen exactament amb les paraules clau
-  const encerts = paraulesSeleccionades.filter((p) => paraulesClau.includes(p));
+  const paraulesEncertades = paraulesSeleccionades.filter((p) => paraulesClau.includes(p));
   const sobrants = paraulesSeleccionades.filter((p) => !paraulesClau.includes(p));
   const faltants = paraulesClau.filter((p) => !paraulesSeleccionades.includes(p));
 
@@ -617,8 +627,12 @@ function comprovarTextos(pregunta, index) {
   if (seleccionadesOrdenades.length === clauOrdenades.length &&
       seleccionadesOrdenades.every((val, i) => val === clauOrdenades[i])) {
     esCorrecte = true;
+    encerts++;
+    actualitzarMarcador();
     missatgeFeedback = `✅ Correcte! Has seleccionat exactament les paraules correctes.`;
   } else {
+    errors++;
+    actualitzarMarcador();
     missatgeFeedback = '❌ Incorrecte. ';
     if (faltants.length > 0) {
       missatgeFeedback += `T\'han faltat: «${faltants.join('», «')}». `;
@@ -681,6 +695,8 @@ test.addEventListener('submit', (event) => {
       resposta.closest('label').classList.add('opcio-correcta');
       feedback.textContent = `Correcte ✓ ${pregunta.explicacio || ''}`;
       feedback.className = 'correcte';
+      encerts++;
+      actualitzarMarcador();
     } else {
       resposta.closest('label').classList.add('opcio-incorrecta');
 
@@ -695,6 +711,8 @@ test.addEventListener('submit', (event) => {
 
       feedback.textContent = `Incorrecte ✗ La resposta correcta és «${textCorrecte}». ${pregunta.explicacio || ''}`;
       feedback.className = 'incorrecte';
+      errors++;
+      actualitzarMarcador();
     }
   });
 });
