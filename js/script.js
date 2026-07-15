@@ -2,7 +2,7 @@ const preguntes = [
   {
     id: 1,
     categoria: 'Vocals',
-    enunciat: 'Com es pronuncia la <u><span style="color:red;font-weight:bold">o</span></u> tònica de la paraula «soci»?',
+    enunciat: 'Com es pronuncia la o tònica de la paraula «s<u><span style="color:red;font-weight:bold">o</span></u>ci»?',
     opcions: [
       { text: 'Oberta', valor: 'oberta' },
       { text: 'Tancada', valor: 'tancada' }
@@ -24,13 +24,13 @@ const preguntes = [
   {
     id: 3,
     categoria: 'Elisions',
-    enunciat: 'Quin fenomen es produeix en «espess<span style="color:red;font-weight:bold">a</span> ombra»?',
+    enunciat: 'Quin fenomen es produeix en «quinz<span style="color:red;font-weight:bold">e</span> anys»?',
     opcions: [
       { text: 'Elisió', valor: 'elisio' },
       { text: 'No elisió', valor: 'no-elisio' }
     ],
     correcta: 'elisio',
-    explicacio: 'Quan una vocal és tònica i l\'altra és àtona, s\'elimina la vocal àtona: «espessa ombra» es pronuncia «mitj·ora».'
+    explicacio: 'Quan una vocal és tònica i l\'altra és àtona, s\'elimina la vocal àtona: «quinze anys» es pronuncia «quinz·anys».'
   },
   {
     id: 4,
@@ -308,11 +308,11 @@ const preguntes = [
     explicacio: 'No s\'elideix la \'À\' d\'«Àngel» perquè tant la \'à\' d\'«arribà» com la \'À\' d\'«Àngel» són tòniques. Quan les dues vocals són tòniques, no s\'elideixen (regla: «Si les dues són tòniques no s\'elideixen»). Exemple del dossier: «Arribà Àngel (arribà Àngel)».'
   },
   {
-    pregunta: 'En l\'expressió «hi h<span style="color: red; font-weight: bold;">a</span> gent», la vocal destacada:',
+    pregunta: 'En l\'expressió «h<span style="color: red; font-weight: bold;">i</span> ha gent», la vocal destacada:',
     opcions: ["s\'elideix", "no s\'elideix"],
     resposta_correcta: "no s\'elideix",
     categoria: 'Elisions',
-    explicacio: 'No s\'elideix la \'a\' de «ha» perquè la \'i\' de «hi» forma diftong amb la \'a\' següent. Quan una de les vocals és \'i\' o \'u\' i formen diftong, no s\'elideixen (regla: «Si una de les vocals és i o u, i formen diftong, no s\'elideixen»). Exemple del dossier: «Hi ha gent (iagent)».'
+    explicacio: 'No s\'elideix la \'i\' de «hi» perquè forma diftong amb la \'a\' següent. Quan una de les vocals és \'i\' o \'u\' i formen diftong, no s\'elideixen (regla: «Si una de les vocals és i o u, i formen diftong, no s\'elideixen»). Exemple del dossier: «Hi ha gent (iagent)».'
   },
   {
     pregunta: 'En l\'expressió «l<span style="color: red; font-weight: bold;">a</span> universitat», la vocal destacada:',
